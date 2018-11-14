@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sinatra Test</title>
+  </head>
+  <body>
+    <div>
+      <h1>hello, my name is <%= @name %></h1>
+      <img src="http://bit.ly/1eze8aE">
+    </div>
+    <div>
+      <% unless @name %>
+      <form method="get">
+        <label for="name">enter the cat's name</label>
+          <input type="text" name="name">
+          <input type="submit" value="ENTER">
+      </form>
+      <% end %>
+    </div>
+  </body>
+</html>
